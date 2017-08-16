@@ -9,4 +9,5 @@ custom_soong:
 	echo '    "QTIDisplayPath":  "$(call project-path-for,qcom-display)",'; \
 	echo '    "QTIMediaPath":  "$(call project-path-for,qcom-media)",';  \
 	echo '    "BoardUsesQTIHardware":  $(if $(BOARD_USES_QTI_HARDWARE),true,false),';  \
+	echo '    "Libart_img_base": "$(LIBART_IMG_BASE)",'; \
 	echo '') > $(SOONG_VARIABLES_TMP)
