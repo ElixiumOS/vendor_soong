@@ -11,6 +11,10 @@ type Product_variables struct {
 	Needs_text_relocations struct {
 		Cppflags []string
 	}
+
+	Cant_reallocate_omx_buffers struct {
+		Cflags []string
+	}
 }
 
 type ProductVariables struct {
@@ -20,4 +24,5 @@ type ProductVariables struct {
 	QTIAudioPath            *string `json:",omitempty"`
 	QTIDisplayPath          *string `json:",omitempty"`
 	QTIMediaPath            *string `json:",omitempty"`
+	Cant_reallocate_omx_buffers *bool `json:",omitempty"`
 }
