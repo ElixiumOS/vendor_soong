@@ -19,6 +19,10 @@ type Product_variables struct {
 	Qcom_bsp_legacy struct {
 		Cflags []string
 	}
+
+	Use_legacy_rescaling struct {
+		Cflags []string
+	}
 }
 
 type ProductVariables struct {
@@ -30,4 +34,5 @@ type ProductVariables struct {
 	QTIMediaPath            *string `json:",omitempty"`
 	Cant_reallocate_omx_buffers *bool `json:",omitempty"`
 	Qcom_bsp_legacy         *bool `json:",omitempty"`
+	Use_legacy_rescaling    *bool `json:",omitempty"`
 }
